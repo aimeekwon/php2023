@@ -1,21 +1,21 @@
 <?php
     include "../connect/connect.php";
-    
-    $sql = "create table members(";
+    $sql= "create table plantyMember(";
     $sql .= "memberID int(10) unsigned auto_increment,";
     $sql .= "youEmail varchar(40) UNIQUE NOT NULL,";
     $sql .= "youName varchar(10) NOT NULL,";
+    $sql .= "youNick varchar(10) NOT NULL,";
     $sql .= "youPass varchar(20) NOT NULL,";
-    $sql .= "youPhone varchar(40),";
+    $sql .= "youPhone varchar(20),";
+    $sql .= "youQuestion VARCHAR(100),";
+    $sql .= "youAnswer VARCHAR(100),";
     $sql .= "regTime int(40) NOT NULL,";
     $sql .= "PRIMARY KEY(memberID)";
     $sql .= ") charset=utf8;";
-    $result = $connect -> query($sql);
-
+    $result= $connect->query($sql);
     if($result){
-        echo "create tables complete";
-    } else {
-        echo "create tables false";
+        echo "create trables Complete";
+    }else{
+        echo "create trables false";
     }
-    
 ?>

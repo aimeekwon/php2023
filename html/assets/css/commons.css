@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 /* skip */
 #skip {
     position: relative;
@@ -105,6 +108,18 @@ body.windows {
     border-radius: 5px;
     cursor: pointer;
 }
+.btnStyle4 {/*기본버튼 스타일*/
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1em 2em;
+    margin: 0 0.5em;
+    background-color: var(--color__black);
+    color: var(--color__white);
+    /* width: 90px; */
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 
 /* list style */
@@ -160,6 +175,33 @@ body.windows {
 .mb100 {margin-bottom: 100px !important;}
 
 
+.mr10 {margin-right: 10px !important;}
+.mr20 {margin-right: 20px !important;}
+.mr30 {margin-right: 30px !important;}
+.mr40 {margin-right: 40px !important;}
+.mr50 {margin-right: 50px !important;}
+.mr60 {margin-right: 60px !important;}
+.mr70 {margin-right: 70px !important;}
+.mr100 {margin-right: 100px !important;}
+
+.ml10 {margin-left: 10px !important;}
+.ml20 {margin-left: 20px !important;}
+.ml30 {margin-left: 30px !important;}
+.ml40 {margin-left: 40px !important;}
+.ml50 {margin-left: 50px !important;}
+.ml60 {margin-left: 60px !important;}
+.ml70 {margin-left: 70px !important;}
+.ml100 {margin-left: 100px !important;}
+
+.btnStyle5 {
+    border: 1px solid var(--color__black);
+    border-radius: 20px;
+    padding: 2px 10px ;
+}
+.btnStyle5:hover {
+    background-color: var(--color__black);
+    color: var(--color__white);
+}
 
 /* input Style */
 .inputStyle{
@@ -169,6 +211,14 @@ body.windows {
     padding: 1em 2em;
     border:0;
     font-weight: 100;
+}
+.inputStyle2{
+    width: auto;
+    background-color: #fff!important;
+    border-radius: 10px;
+    padding: 1em 2em;
+    border:0;
+    font-weight: 300;
 }
 /* label style */
 label {

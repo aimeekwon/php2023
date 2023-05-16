@@ -1,0 +1,274 @@
+.board__intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0;
+    font-family: var(--main__ko);
+}
+.board__intro > div {
+    width: 48%;
+}
+.board__intro > div h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+.board__intro > div h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+.board__intro .customer li {
+    padding-left: 40px;
+    padding-top: 14px;
+}
+.board__intro .customer li a {
+    font-size: 16px;
+}
+.service > p {
+    padding-left: 40px;
+    padding-top: 14px;
+    font-size: 16px;
+    font-weight: 100;
+}
+.service_btn {
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    flex-wrap: wrap;
+}
+.service_btn > div {
+    width: 60%;
+}
+.service_btn > div > a {
+    display: inline-block;
+}
+.service_btn > div .kakao {
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--color__green);
+    color: var(--color__white);
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.service_btn > div .Email {
+    align-items: center;
+    margin-top: 6px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--color__green);
+    border: 1px solid var(--color__green);
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.service_btn > div p {
+    display: block;
+    text-align: left;
+}
+.service_btn > p {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color__green);
+}
+.board__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 25px;
+}
+.board__search .left {
+    width: 40%;
+}
+.board__search .left em {
+    color: red;
+}
+.search__center {
+    width: 100%;
+    text-align: center;
+    margin-top: 55px;
+}
+.search__center input {
+    border: 0;
+    background-color: var(--color__white);
+    padding: 9px 13%;
+    border-radius: 5px;
+    height: 40px;
+    margin: 0 10px;
+}
+.search__center select {
+    border: 0;
+    width: 90px;
+    height: 40px;
+    padding: 11px;
+    border-radius: 5px;
+    vertical-align: -2px;
+}
+.board__search .right {
+    width: 60%;
+    text-align: right;
+}
+.board__table {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border-top: 2px solid var(--color__green);
+    border-bottom: 2px solid var(--color__green);
+    text-align: center;
+}
+.board__table table {
+    text-align: center;
+}
+.board__table table th {
+    background-color: var(--bg__green);
+    border-bottom: 1px solid var(--color__black);;
+    padding: 15px 5px;
+    font-weight: 500;
+    color: var(--color__white);
+}
+.board__table table td {
+    padding: 15px 5px;
+    border-bottom: 1px solid var(--color__black);;
+}
+.board__table table td a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.board__table table tr:hover {
+    background-color: var(--bg__gray2);
+}
+.board__pages {
+    margin-bottom: 100px;
+}
+.board__pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board__pages li a {
+    border: 1px solid var(--bg__gray3);
+    padding: 10px 13px;
+    margin-left: -1px;
+}
+.board__pages li a:hover {
+    background-color: var(--bg__gray2);
+
+}
+.board__pages li.active a {
+    background-color: var(--bg__gray2);
+}
+.board__view {
+  margin-top: 40px;
+  border-top: 2px solid var(--color__black);
+  border-bottom: 2px solid var(--color__black);
+}
+.board__view table td,
+.board__view table th {
+  padding: 15px;
+  border-bottom: 1px solid var(--color__black);
+}
+.board__view table tr:last-child td {
+    height: 500px;
+    vertical-align: top;
+}
+.board__view table th {
+  background-color: var(--bg__gray2);
+  font-weight: 500;
+}
+.board__btn {
+  margin-top: 20px;
+  text-align: right;
+}
+.board__write {
+  padding: 50px 0 100px;
+}
+.board__write label {
+  width: 100%;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+.board__write input {
+  margin-bottom: 50px;
+}
+.board__write textarea {
+  padding: 2em;
+  resize: none;
+}
+.board__write button {
+  float: right;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+/* board__Write */
+.board__header {
+    text-align: center;
+    padding-top: 100px;
+}
+.board__header .logo {
+    font-weight: 900;
+    font-size: 70px;
+    margin-top: 40px;
+    color: var(--color__green);
+    font-family: "Montserrat";
+}
+.board__header h2 {
+    font-size: 26px;
+    font-family: "NexonLv1Gothic";
+    font-weight: 500;
+    color: var(--color__green);
+}
+.board__header p {
+    font-size: 15px;
+    font-weight: 400;
+}
+.board__write {
+    text-align: left;
+}
+.board__write label {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color__green);
+}
+#boardtitle {
+    height: 60px;
+    font-size: 16px;
+}
+#boardContents {
+    height: 450px;
+    font-size: 16px;
+}
+/* board__View */
+.board__View {
+    border-bottom: 2px solid var(--color__green);
+    border-top: 2px solid var(--color__green);
+    background-color: #fff;
+}
+.board__View tbody td:first-child {
+    height: 108px;
+    font-size: 32px;
+    text-align: center;
+    color: var(--color__green);
+}
+.board__View td,
+.board__View th {
+    border-bottom: 1px solid var(--color__green);
+    border-top: 1px solid var(--color__green);
+    padding: 15px;
+}
+.board__View tbody th {
+    background-color: rgb(100, 149, 105,0.2);
+    color: var(--color__green);
+}
+.board__View tr:last-child td {
+    height: 500px;
+    vertical-align: top;
+}
+.board__View th {
+    background-color: var(--color__gray2);
+    font-weight: 600;
+}

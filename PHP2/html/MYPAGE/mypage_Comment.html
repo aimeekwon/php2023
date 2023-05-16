@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>댓글 관리</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="/php2/html/assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/NAV/mypage.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <!-- SCRIPT -->
+        <script defer src="../assets/js/common.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h2 class="blind">헤더 영역</h2>
+        <div class="container">
+            <div class="header__inner">
+                <div class="left">
+                    <h1 class="logo"> <a href="/php2/html/main.html">PLANTY</a></h1>
+                </div>
+                <nav class="nav__inner">
+                    <ul>
+                        <li><a href="#">PLANTY</a>
+                            <ul class="submenu">
+                                <li><a href="#">브랜드철학</a></li>
+                                <li><a href="#">핵심가치</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">식물 사전</a>
+                            <ul class="submenu">
+                                <li><a href="#">식물관리정보</a></li>
+                                <li><a href="#">식물소개</a></li>
+                                <li><a href="#">식물검색</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">캘린더</a>
+                            <ul class="submenu">
+                                <li><a href="#">이달의 식물</a></li>
+                                <li><a href="#">내식물</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="submenu">
+                                <li><a href="#">플랜테리어</a></li>
+                                <li><a href="#">내식물공유</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">문의사항</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">F&Q</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="right">
+                    <ul>
+                        <li><a href="/php2/html/LOGIN/login.html">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="mypage__wrap">
+            <div class="mypage__main">
+                <div class="mypage__asid">
+                    <div class="profile__box">
+                        <figure class="profile__img">
+                            <source srcset="./assets/img/blog__cardimg04-min.jpg, ./assets/img/blog__cardimg04@2x-min.jpg, ./assets/img/blog__cardimg04@3x-min.jpg" />
+                            <img src="../assets/img/LOGIN/bgimg1.png" alt="소개이미지">
+                        </figure>
+                        <div class="profile__info">
+                            <div class="nick">kebab</div>
+                            <div class="email">kebab00@naver.com</div>
+                        </div>
+                    </div>
+                    <div class="profile__nav">
+                        <div class="nav__list">
+                            <ul class="nav__menu">
+                                <li><a href="#">내 식물 관리</a></li>
+                                <li><a href="#">내 정보 관리</a></li>
+                                <li><a href="#">내 활동 관리</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">내가 쓴 글</a></li>
+                                        <li><a href="#">댓글 관리</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mypage__right">
+                    <div class="mywritten">
+                        <p>댓글 관리</p>
+                    </div>
+                    <div class="mywritten__inner">
+                        <div class="mywritten__table">
+                            <table>
+                                <colgroup>
+                                <col style="width: 15%;">
+                                <col>
+                                <col style="width: 15%;">
+                                </colgroup>
+                                
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>댓글 내용</th>
+                                        <th>등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="boardView.html">댓글내용</a></td>
+                                        <td>2023-03-03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="boardView.html">댓글내용</a></td>
+                                        <td>2023-03-03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><a href="boardView.html">댓글내용</a></td>
+                                        <td>2023-03-03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><a href="boardView.html">댓글내용</a></td>
+                                        <td>2023-03-03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><a href="boardView.html">댓글내용</a></td>
+                                        <td>2023-03-03</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="board__pages">
+                            <ul>
+                                <li><a href="#">처음으로</a></li>
+                                <li><a href="#">이전</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">다음</a></li>
+                                <li><a href="#">마지막으로</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <h2 class="blind">푸터 영역</h2>
+                <div class="footer__inner">
+            <div class="f_logo">
+                <span><a href="#">PLANTY</a></span>
+            </div>
+            <nav><ul>
+                <li><a href="#">PLANTY
+                    <ul>
+                        <li><a href="#">브랜드철학</a></li>
+                        <li><a href="#">핵심가치</a></li>
+                    </ul>
+
+                </a></li>
+                <li><a href="#">식물사전
+                    <ul>
+                        <li><a href="#">식물관리정보</a></li>
+                        <li><a href="#">식물소개</a></li>
+                        <li><a href="#">식물검색</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">캘린더
+                    <ul>
+                        <li><a href="#">이달의 식물</a></li>
+                        <li><a href="#">내식물</a></li>
+                    </ul>
+
+                </a></li>
+                <li><a href="#">커뮤니티
+                    <ul>
+                        <li><a href="#">플랜테리어</a></li>
+                        <li><a href="#">내 식물 공유</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">고객센터
+                    <ul>
+                        <li><a href="#">문의사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">F&Q</a></li>
+                    </ul>
+                </a></li>
+
+            </ul></nav>
+        </div>
+        <div class="copyright">
+            2023 PLANTY<br>Copyright ⓒAll Rights Reserved.
+        </div>
+    </footer>
+        <script src="../../html/assets/js/NAV/community.js"></script> 
+        <script src="../../html/assets/js/headerNav.js"></script>

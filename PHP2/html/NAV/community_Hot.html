@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티</title>
+    <!-- CSS -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="/php2/html/assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <!-- SCRIPT -->
+        <script defer src="../assets/js/common.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h2 class="blind">헤더 영역</h2>
+        <div class="container">
+            <div class="header__inner">
+                <div class="left">
+                    <h1 class="logo"> <a href="/html/main.html">PLANTY</a></h1>
+                </div>
+                <nav class="nav__inner">
+                    <ul>
+                        <li><a href="#">PLANTY</a>
+                            <ul class="submenu">
+                                <li><a href="#">브랜드철학</a></li>
+                                <li><a href="#">핵심가치</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">식물 사전</a>
+                            <ul class="submenu">
+                                <li><a href="#">식물관리정보</a></li>
+                                <li><a href="#">식물소개</a></li>
+                                <li><a href="#">식물검색</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">캘린더</a>
+                            <ul class="submenu">
+                                <li><a href="#">이달의 식물</a></li>
+                                <li><a href="#">내식물</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="submenu">
+                                <li><a href="#">플랜테리어</a></li>
+                                <li><a href="#">내식물공유</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">문의사항</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">F&Q</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="right">
+                    <ul>
+                        <li><a href="/php2/html/LOGIN/login.html">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+     <div class="wrap container">
+        <article id="community__slider">
+            <h2 class="blind">슬라이더 영역</h2>
+            <div class="slider__inner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider community__img01">
+                            <div class="slider__info">
+                                <h3 class="title">요즘 대세는 ‘넝쿨식물’🌿</h3>
+                                <P class="desc">좁은 집 인테리어에 제격인 ‘넝쿨 식물’ <br>
+                                    키워보세요</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider community__img01">
+                            <div class="slider__info">
+                                <h3 class="title">요즘 대세는 ‘넝쿨식물’🌿</h3>
+                                <P class="desc">좁은 집 인테리어에 제격인 ‘넝쿨 식물’ <br>
+                                    키워보세요</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider community__img01">
+                            <div class="slider__info">
+                                <h3 class="title">요즘 대세는 ‘넝쿨식물’🌿</h3>
+                                <P class="desc">좁은 집 인테리어에 제격인 ‘넝쿨 식물’ <br>
+                                    키워보세요</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__dot" id="community__dot">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </article>
+        <div class="contents">
+            <div class="contents__nav">
+                <div id="options" class="gridly">
+                    <ul class="filter option-set" data-filter-group="color">
+                        <li><a id="filters" href="community_All.html#community__dot" data-filter="*" >ALL</a></li>
+                        <li class="webstandard"><a href="community_Hot.html#community__dot" data-filter=".HOT" class="selected">HOT🔥</a></li>
+                        <li class="webstandard"><a href="community_My_Plant.html#community__dot" data-filter=".myPlant">내 식물자랑</a></li>
+                        <li class="webstandard"><a href="community_Plant_Info.html#community__dot" data-filter=".plantInfo">식물관리정보</a></li>
+                        <li class="webstandard"><a href="community_Planty.html#community__dot" data-filter=".planty">플랜테리어</a></li>
+                    </ul>
+                    <!-- <ul class="grid">
+                        <li class=">ALL</li>
+                        <li class=">HOT🔥</li>
+                    </ul> -->
+                </div>
+                <a href="#" class="community__write">작성하기</a>
+            </div>
+            <div class="contents__inner">
+                <!-- box -->
+                <section class="color-shape" data-category="HOT">
+                    <a href="#" target="_blank">
+                    <div class="cont_wrap">
+                        <img src="/php2/html/assets/img/COMMUNITY/community_Contens01.png" alt="portfolio">
+                        <div class="cont_desc">
+                            <h5>초보 가드너를 위한 착한 가격의 순둥이식물 추천🌿</h5>
+                            <div>
+                                <p>HOT🔥</p>
+                                <div>
+                                    <span>케밥</span>
+                                    <span>조회수 <em>333</em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </section>
+              <!-- //box -->
+            <!-- box -->
+                <section class="color-shape" data-category="HOT">
+                    <a href="#" target="_blank">
+                    <div class="cont_wrap">
+                        <img src="/php2/html/assets/img/COMMUNITY/community_Contens01.png" alt="portfolio">
+                        <div class="cont_desc">
+                            <h5>초보 가드너를 위한 착한 가격의 순둥이식물 추천🌿</h5>
+                            <div>
+                                <p>HOT🔥</p>
+                                <div>
+                                    <span>케밥</span>
+                                    <span>조회수 <em>333</em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </section>
+            <!-- //box -->
+                <!-- box -->
+                <section class="color-shape myPlant">
+                    <a href="#" target="_blank">
+                    <div class="cont_wrap">
+                        <img src="/php2/html/assets/img/COMMUNITY/community_Contens01.png" alt="portfolio">
+                        <div class="cont_desc">
+                            <h5>초보 가드너를 위한 착한 가격의 순둥이식물 추천🌿</h5>
+                            <div>
+                                <p>HOT🔥</p>
+                                <div>
+                                    <span>케밥</span>
+                                    <span>조회수 <em>333</em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </section>
+              <!-- //box -->
+                <!-- box -->
+                <section class="color-shape myPlant">
+                    <a href="#" target="_blank">
+                    <div class="cont_wrap">
+                        <img src="/php2/html/assets/img/COMMUNITY/community_Contens01.png" alt="portfolio">
+                        <div class="cont_desc">
+                            <h5>초보 가드너를 위한 착한 가격의 순둥이식물 추천🌿</h5>
+                            <div>
+                                <p>HOT🔥</p>
+                                <div>
+                                    <span>케밥</span>
+                                    <span>조회수 <em>333</em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </section>
+              <!-- //box -->
+                <!-- box -->
+                <section class="color-shape plantInfo">
+                    <a href="#" target="_blank">
+                    <div class="cont_wrap">
+                        <img src="/php2/html/assets/img/COMMUNITY/community_Contens01.png" alt="portfolio">
+                        <div class="cont_desc">
+                            <h5>초보 가드너를 위한 착한 가격의 순둥이식물 추천🌿</h5>
+                            <div>
+                                <p>HOT🔥</p>
+                                <div>
+                                    <span>케밥</span>
+                                    <span>조회수 <em>333</em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </section>
+              <!-- //box -->
+                <!-- box -->
+                <section class="color-shape HOT">
+                    <a href="#" target="_blank">
+                    <div class="cont_wrap">
+                        <img src="/php2/html/assets/img/COMMUNITY/community_Contens01.png" alt="portfolio">
+                        <div class="cont_desc">
+                            <h5 class="title">초보 가드너를 위한 착한 가격의 순둥이식물 추천🌿</h5>
+                            <div>
+                                <p class="kategorie">HOT🔥</p>
+                                <div>
+                                    <span class="user">케밥</span>
+                                    <span>조회수 <em>333</em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </section>
+                <!-- //box -->
+                 <!-- box -->
+                 <section class="color-shape planty">
+                    <a href="#" target="_blank">
+                    <div class="cont_wrap">
+                        <img src="/php2/html/assets/img/COMMUNITY/community_Contens01.png" alt="portfolio">
+                        <div class="cont_desc">
+                            <h5>초보 가드너를 위한 착한 가격의 순둥이식물 추천🌿</h5>
+                            <div>
+                                <p>HOT🔥</p>
+                                <div>
+                                    <span>케밥</span>
+                                    <span>조회수 <em>333</em></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </section>
+                <!-- //box -->
+            </div>
+        </div>
+     </div>
+    </main>
+    <footer id="footer">
+        <h2 class="blind">푸터 영역</h2>
+                <div class="footer__inner">
+            <div class="f_logo">
+                <span><a href="#">PLANTY</a></span>
+            </div>
+            <nav><ul>
+                <li><a href="#">PLANTY
+                    <ul>
+                        <li><a href="#">브랜드철학</a></li>
+                        <li><a href="#">핵심가치</a></li>
+                    </ul>
+
+                </a></li>
+                <li><a href="#">식물사전
+                    <ul>
+                        <li><a href="#">식물관리정보</a></li>
+                        <li><a href="#">식물소개</a></li>
+                        <li><a href="#">식물검색</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">캘린더
+                    <ul>
+                        <li><a href="#">이달의 식물</a></li>
+                        <li><a href="#">내식물</a></li>
+                    </ul>
+
+                </a></li>
+                <li><a href="#">커뮤니티
+                    <ul>
+                        <li><a href="#">플랜테리어</a></li>
+                        <li><a href="#">내 식물 공유</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">고객센터
+                    <ul>
+                        <li><a href="#">문의사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">F&Q</a></li>
+                    </ul>
+                </a></li>
+
+            </ul></nav>
+
+        </div>
+        <div class="copyright">
+            2023 PLANTY<br>Copyright ⓒAll Rights Reserved.
+        </div>
+    </footer>
+        <script src="../../html/assets/js/JQUERY/jquery-1.9.1.min.js"></script>
+        <script src="../../html/assets/js/JQUERY/bootstrap-collapse.js"></script>
+        <script src="../../html/assets/js/JQUERY/bootstrap-transition.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="/path/to/isotope.pkgd.min.js"></script>
+        <script src="../../html/assets/js/NAV/community.js"></script> 
+        <script src="../../html/assets/js/headerNav.js"></script>
+</body>
+</html>

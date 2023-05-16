@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 기본 설정 */
+@import "fonts.css";
+@import "resets.css";
+@import "vars.css";
+@import "commons.css";
+
+/* 레이아웃 */
+@import "layout.css";
+
+/* intro */
+@import "intro.css";
+
+/* * Join */ 
+@import "/php2/html/assets/css/LOGIN/join.css";
+
+/* login */
+@import "/php2/html/assets/css/LOGIN/login.css";
+
+
+/* board */
+@import "/php2/html/assets/css/BOARD/board.css";
+
+/* community */
+@import "/php2/html/assets/css/NAV/community.css";
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <!-- CSS -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/NAV/mypage.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <!-- SCRIPT -->
+        <script defer src="../assets/js/common.js"></script>
+</head>
+<body class="bg2">
+    <header id="header">
+        <h2 class="blind">헤더 영역</h2>
+        <div class="container">
+            <div class="header__inner">
+                <div class="left">
+                    <h1 class="logo"> <a href="/html/main.html">PLANTY</a></h1>
+                </div>
+                <nav class="nav__inner">
+                    <ul>
+                        <li><a href="#">PLANTY</a></li>
+                        <li><a href="#">식물 사전</a></li>
+                        <li><a href="#">캘린더</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="right">
+                    <ul>
+                        <li><a href="/php2/html/LOGIN/login.html">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <main>
+        <div id="mypage__wrap">
+            <div class="mypage__main">
+                <div class="mypage__asid">
+                    <div class="profile__box">
+                        <figure class="profile__img">
+                            <source srcset="./assets/img/blog__cardimg04-min.jpg, ./assets/img/blog__cardimg04@2x-min.jpg, ./assets/img/blog__cardimg04@3x-min.jpg" />
+                            <img src="../assets/img/LOGIN/bgimg1.png" alt="소개이미지">
+                        </figure>
+                        <div class="profile__info">
+                            <div class="nick">kebab</div>
+                            <div class="email">kebab00@naver.com</div>
+                        </div>
+                    </div>
+                    <div class="profile__nav">
+                        <div class="nav__list">
+                            <ul class="nav__menu">
+                                <li><a href="#">내 식물 관리</a></li>
+                                <li><a href="#">내 정보 관리</a></li>
+                                <li><a href="#">내 활동 관리</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">내가 쓴 글</a></li>
+                                        <li><a href="#">댓글 관리</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mypage__right">
+                    <div class="myinfo">
+                        <h2>내 정보 관리</h2>
+                        <div class="myinfo__profile">
+                            <figure>
+                                <img src="./brandint01.jpg" alt="">
+                                <input type="text" placeholder="현빈">
+                            </figure>
+                            <a href="../MYPAGE/mypage.html">저장하기</a>
+                        </div>
+                        <div class="myinfo__info">
+                            <p>로그인 정보</p> <span>PLANTY 계정 로그인에 사용되는 이메일, 전화번호 입니다.</span>
+                            <div>이메일 : <input type="text" placeholder="eaaa@naver.com"> </div>
+                            <div>닉네임 :  <input type="text" placeholder="kebab00"></div>
+                            <div>전화번호 : <input type="text" placeholder="010-0000-0000"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="btStyle">
+        <h2 class="blind">푸터 영역</h2>
+                <div class="footer__inner">
+            <div class="f_logo">
+                <span><a href="#">PLANTY</a></span>
+            </div>
+            <nav><ul>
+                <li><a href="#">PLANTY
+                    <ul>
+                        <li><a href="#">브랜드철학</a></li>
+                        <li><a href="#">핵심가치</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">식물사전
+                    <ul>
+                        <li><a href="#">식물관리정보</a></li>
+                        <li><a href="#">식물소개</a></li>
+                        <li><a href="#">식물검색</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">캘린더
+                    <ul>
+                        <li><a href="#">이달의 식물</a></li>
+                        <li><a href="#">내식물</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">커뮤니티
+                    <ul>
+                        <li><a href="#">플랜테리어</a></li>
+                        <li><a href="#">내 식물 공유</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">고객센터
+                    <ul>
+                        <li><a href="#">문의사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">F&Q</a></li>
+                    </ul>
+                </a></li>
+            </ul></nav>
+        </div>
+        <div class="copyright">
+            2023 PLANTY<br>Copyright ⓒAll Rights Reserved.
+        </div>
+    </footer>
+</body>
+<script>
+</script>
+</html>

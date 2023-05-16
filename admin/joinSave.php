@@ -50,7 +50,7 @@
                             <div class="over">
                                 <label for="youNick" class="required">닉네임</label>
                                 <input class="inputStyle" type="text" id="youNick" name="youNick" placeholder="닉네임을 입력해주세요" required>
-                                <a href="#c" class="youCheck">닉네임 중복검사</a>
+                                <a href="#c" class="youCheck" onclick="nickChecking()">닉네임 중복검사</a>
                                 <p class="msg" id="youNickComment"><!-- 이미 등록되어있는 닉네임입니다. --></p>
                             </div>
                             <div>
@@ -69,8 +69,8 @@
                                 <p class="msg" id="youBirthComment"><!-- 생년월일이 일치하지 않습니다. --></p>
                             </div>
                             <div>
-                                <label for="youPhome">연락처</label>
-                                <input class="inputStyle" type="text" id="youPhome" name="youPhome" placeholder="연락처를 입력해주세요" maxlength="15">
+                            <label for="youPhone">연락처</label>
+                        <input class="inputStyle" type="text" id="youPhone" name="youPhone" placeholder="연락처를 입력해주세요" maxlength="15">
                                 <p class="msg" id="youBirthComment"><!-- 휴대폰 번호를 입력해주세요 --></p>
                             </div>
                             <button type="submit" class="btnStyle">회원가입 완료</button>
@@ -112,7 +112,37 @@
                 })
             }
         }
+
+        function nickChecking(){
+            let youNick = $("#youNick").val();
+            if(youNick == null || youNick == ''){
+                $("#youNickComment").text("*닉네임을")
+            }else {
+                $.ajax({
+                    type : "POST",
+                    url:  "joinCheck.php",
+                    data : {"youNick" : youNick, "type" : "isNickCheck"},
+                    dataType : "json",
+
+                    success : function(data){
+                        if(data.result == "good"){
+                            $("#youNickComment").text("* 사용 가능한 닉네임 입니다");
+                            isEmailCheck = true;
+                        }else {
+                            $("#youNickComment").text("* 이미 존재하는 닉네임 입니다");
+                            isEmailCheck = false;
+                        }
+                    },
+                    error : function(request, status, error){
+                        console.log("request" + request);
+                        console.log("status" + status);
+                        console.log("error" + error);
+                    }
+                })
+            }
+        }        
         function joinChecks(){
+
             //이름 유효성 검사
             if($("#youName").val() == ''){
                 $("#youNameComment").text("* 이름을 입력해주세요!");

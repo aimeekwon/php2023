@@ -1,0 +1,168 @@
+
+#main {
+    /* background-color: #5ae622; */
+   
+}
+.main__container {
+    width: 700px;
+    /* background-color: #ff0c0c; */
+    padding: 30px 100px;
+    border-top: 2px solid var(--color__green);
+    border-bottom : 2px solid var(--color__green);
+    box-shadow: 0 6px 0  rgba(0, 0, 0, 0.05), 0 -6px 0  rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin: 0 250px;
+
+}
+.intro__inner {
+
+}
+
+.intro__h2 {
+    font-size: 70px;
+    font-family: var(--main__en);
+    font-weight: 800;
+    color: var(--color__green);
+    margin-bottom: 10px;
+}
+.intro__inner h4 {
+    font-size: 24px;
+    font-family: var(--main__ko);
+    font-weight: 500;
+    color: var(--color__green);
+
+}
+
+/* join__inner */
+
+.join__inner {
+    padding: 30px 0 0 0;
+    border-top: 1px solid var(--color__green);
+    text-align: left;
+}
+
+.join__form fieldset label {
+    font-size: 14px;
+    font-family: var(--main__ko);
+    color: var(--color__green);
+    font-weight: bold;
+}
+
+.inputStyle {
+    height: 40px;
+    border: 1px solid var(--color__green);
+    border-radius: 0;
+    font-family: var(--main__ko);
+    font-size: 12px;
+    background-color:var(--color__white);
+    color: #979797;
+
+}
+.input__inner > .inputStyle {
+    width: 74%;
+    height: 40px;
+}
+.input__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.checkbtn {
+    padding: 0 30px;
+    width: 24%;
+    height: 40px;
+    color: var(--color__white);
+    background-color: var(--color__green);
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+}
+
+fieldset > div {
+    margin-bottom: 10px;
+}
+#PassQuestion {
+    color: #979797;
+    font-family: var(--main__ko);
+    font-weight: 400;
+    font-size: 12px;
+    width: 100%;
+    padding-left: 20px;
+    height: 40px;
+    border: 1px solid var(--color__green);
+}
+
+.btnStyle {
+    display: block;
+    background-color: var(--color__green);
+    color: var(--color__white);
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 30px auto;
+    font-size: 14px;
+    font-family: var(--main__ko);
+}
+
+/* AGREE */
+#myCheckbox {
+    width: 14px;
+    height: 14px;
+}
+
+.agree__text h4 {
+    font-size: 14px;
+    font-family: var(--main__ko);
+    color: var(--color__green);
+    font-weight: 600;   
+}
+
+.agree__desc {
+    margin: 5px 0;
+    height: 500px;
+    border:1px solid var(--color__green);
+    padding: 15px;
+    font-weight: 300;
+    font-family: var(--main__ko);
+    font-size: 14px;
+    overflow-y: scroll;
+
+}
+
+.btnStyle4 {
+    display:block;
+    background-color: var(--color__green);
+    margin: 20px auto;
+    font-size: 1em;
+    padding: 0.5em 3em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btnStyle4 a {
+    color: var(--color__white);
+}
+.btnStyle5 {
+    display:block;
+    background-color: var(--color__green);
+    margin: 25px auto 0;
+    font-size: 1em;
+    padding: 0.5em 3em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btnStyle5 a {
+    color: var(--color__white);
+}
+
+/* join_end */
+.join_end__desc p{
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--main__ko);
+    color: var(--color__green);
+    font-weight: 400;  
+}
+.join__form .msg {
+    padding: 7px 0;
+    color: var(--bg__red);
+}

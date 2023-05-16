@@ -1,0 +1,23 @@
+:root {
+    --main__en : "Montserrat";
+    --main__ko : "NexonLv1Gothic";
+
+    --font__size: "16px";
+
+    --color__black: #222;
+    --color__white: #fff;
+    --color__green: #006241;
+
+    --bg__gray: #eee;
+    --bg__gray2: #f6f5ef;
+    --bg__gray3: #f7f7f7;
+    --bg__black: #222;
+    --bg__green: #006241;
+
+    --line__gray: #ddd;
+
+}
+
+@media (max-width: 800px){
+    
+}

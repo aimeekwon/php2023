@@ -1,0 +1,214 @@
+@charset "UTF-8";
+#dictionary {
+    font-family: var(--main__ko);
+    margin-top: 120px;
+    width: 100%;
+}
+.dictionary__search {
+    display: flex;
+}
+.dictionary__search h3 {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 32px;
+    vertical-align: bottom;
+
+}
+.dictionary__search input {
+    height: 47px;
+    width: 520px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border: 3px solid var(--color__green);
+    padding-left: 20px;
+}
+
+.search__about ul {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    margin-left: 40px;
+
+}
+.search__about ul li {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 10px;
+}
+.search__about ul li:not(:first-child) {
+    border-left: 1px solid #000;
+}
+.search__about ul li a {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* cards__inner */
+.cards__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards__inner.col2>div {
+    width: 49%;
+}
+.cards__inner.col3>div {
+    width: 32.33333%;
+
+}
+.cards__inner.col4>div,
+.cards__inner>div {
+    width: 24%;
+
+}
+.cards__inner.col6>div {
+    width: 15.66666%;
+
+}
+.cards__inner> .card {
+    margin: 10px 0;
+}
+.card__img img {
+    height: 386px;
+    border-bottom: 5px solid var(--color__green);
+    margin-bottom: 5px;
+}
+.card__title {
+    display: flex;
+    justify-content: space-between;
+}
+.card__title h3 {
+    font-size: 14px;
+
+}
+.card__title span {
+    font-size: 14px;
+    color: #333;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .plant_modal {
+
+    padding-top: 150px;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .plant_modal-content {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 700px;
+    background-color: var(--color__green);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .plant_modal-content .close {
+    position: absolute;
+    right: 15px;
+    margin-top: -10px;
+  }
+
+  .plant_modal__img {
+    width: 50%;
+    height: inherit;
+    background-color: #8f2525;
+    margin: -20px;
+  }
+  .plant_modal__img img {
+    width: 100%;
+    height: inherit;
+
+  }
+  .plant_modal__info {
+    width: 50%;
+    text-align: center;
+    overflow-y: scroll;
+    background-color: var(--color__white);
+
+  }
+  .plant_modal__info > div > h2 {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .plant_modal__info > div > p {
+    font-size: 12px;
+  }
+  .plant_modal__info > div > h3 {
+    margin-top: 20px;
+    text-decoration: 3px underline rgba(23, 85, 7, 0.2);
+    text-underline-position: under;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .plant_modal__info > div > div {
+    margin-top: 20px;
+
+  } 
+
+  .plant_modal__info > div > div h4 {
+    font-size: 12px;
+  }
+  .ps {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  /* 스크롤바의 폭 너비 */
+.plant_modal__info::-webkit-scrollbar {
+    width: 8px;
+}
+.plant_modal__info::-webkit-scrollbar-thumb {
+    background: #d9d9d9; /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+    height: 20%;
+}
+.plant_modal__info::-webkit-scrollbar-track {
+    background: rgba(220, 20, 60, .1);  /*스크롤바 뒷 배경 색상*/
+}

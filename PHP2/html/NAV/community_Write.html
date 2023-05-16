@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티 에디터 페이지</title>
+</head>
+
+<link rel="stylesheet" href="assets/css/commons.css">
+<link rel="stylesheet" href="assets/css/resets.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- <link rel="stylesheet" href="/php2/html/assets/css/MAIN/swiper.css">
+<link rel="stylesheet" href="/php2/html/assets/css/MAIN/main_stlye.css"> -->
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/MAIN/main_style.css">
+
+
+
+<style>
+    .scroll-sync.active:before {
+        color: #006142 !important;
+    }
+    .toastui-editor-defaultUI-toolbar input:checked + .switch:before {
+        background-color: #006142 !important;
+    }
+    .toastui-editor-defaultUI-toolbar input:checked+.switch {
+        background-color: #92bbae !important;
+    }
+    .toastui-editor-defaultUI .ProseMirror {
+        height: inherit;
+    }
+</style>
+<body>
+    <header id="header">
+        <h2 class="blind">헤더 영역</h2>
+        <div class="container">
+            <div class="header__inner">
+                <div class="left">
+                    <h1 class="logo"> <a href="/php2/html/main.html">PLANTY</a></h1>
+                </div>
+                <nav class="nav__inner">
+                    <ul>
+                        <li><a href="#">PLANTY</a></li>
+                        <li><a href="#">식물 사전</a></li>
+                        <li><a href="#">캘린더</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="right">
+                    <ul>
+                        <li><a href="/php2/html/LOGIN/login.html">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <div class="community__wrap container bmStyle">
+            <div class="community__W__inner">
+                <form action="#" name="#" method="post">
+                    <select name="blog__cate" id="blog__cate">
+                        <option disabled selected>카테고리</option>
+                        <option value="내 식물 자랑">내 식물 자랑</option>
+                        <option value="식물 관리 정보">식물 관리 정보</option>
+                        <option value="플랜테리어">플랜테리어</option>
+                    </select>
+                    <legend class="blind">커뮤니티 에디터 영역</legend>
+                    <input class="inputStyle_commWrite" type="" id="" name="" placeholder="제목을 입력해주세요" required>
+                    <div id="community__editor"></div>
+                </form>
+                <div class="editor_btn">
+                    <div class="editor__view">
+                        <a href="#" onclick="seeHtml()">html보기</a>
+                        <a href="#" onclick="seeMd()">markdown보기</a>
+                    </div>
+                    <button type="submit" class="editSave_btn">작성하기</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+
+    <footer id="footer__login">
+        <div class="footer__inner container">
+            <p>2023 PLANTY<br>
+                Copyright © All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- //footer -->
+    
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+	<script>
+		const Editor = toastui.Editor;
+	
+		const editor = new Editor({
+			  el: document.querySelector('#community__editor'),
+			  height: '600px',
+			  initialEditType: 'markdown',
+			  previewStyle: 'vertical'
+		});
+        seeHtml = function(){
+            alert(editor.getHTML());
+        }
+        seeMd = function(){
+            alert(editor.getMarkdown());
+        }
+	</script> 
+    <script src="../../html/assets/js/headerNav.js"></script>   
+</body>
+</html>

@@ -1,0 +1,223 @@
+.calendal__header {
+    text-align: center;
+}
+.calendal__header h5 {
+    margin-top: 50px;
+    font-family: var(--main__en);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color__green);
+}
+.calendal__header h2 {
+    font-family: var(--main__en);
+    font-weight: 900;
+    font-size: 70px;
+    color: var(--color__black);
+}
+.calendal__table {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-color: var(--color__white);
+    text-align: center;
+    padding: 30px;
+}
+.calendal__table table {
+    text-align: center;
+}
+.calendal__table table th {
+    padding: 15px 5px;
+    font-weight: 800;
+    color: var(--color__green);
+}
+.calendal__table table th:first-child {
+    color: red;
+}
+
+.calendal__table table td {
+    padding: 10px 15px 80px 10px;
+    border: 1px solid var(--bg__gray);
+    text-align: right;
+    align-items: top;
+    position: relative;
+    
+}
+.calendal__table table tr>td:first-child {
+    border-left: 0px;
+    color: red;
+
+}
+.calendal__table table tr>td:last-child {
+    border-right: 0px;
+}
+.calendal__table table td a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.calendal__table table td:hover {
+    background-color: var(--color__green);
+}
+.month {
+    font-family: var(--main__en);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 20px auto;
+
+}
+.modal-btn::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #00fddb;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    /* transform: calc(10%); */
+    display: none;
+}
+.modal-btn::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    display: none;
+
+}
+
+
+/* 모달 스타일 */
+.modal {
+display: none; /* 기본적으로 모달은 보이지 않도록 설정 */
+position: fixed; /* 모달이 화면에서 고정되도록 설정 */
+z-index: 1; /* 모달이 가장 위에 오도록 설정 */
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto; /* 모달 내용이 넘칠 경우 스크롤 가능하도록 설정 */
+background-color: rgba(0, 0, 0, 0.4); /* 모달 배경색 */
+backdrop-filter: blur(3px);
+}
+.modal__inner {
+    margin: 15% auto; /* 모달이 화면 중앙에 위치하도록 설정 */
+    display: flex;
+    width: 50%;
+    height: 400px;
+    background-color: rgba(3, 59, 10, 0.4); 
+
+
+}
+
+/* 모달 내용 스타일 */
+.modal-content1 {
+    width: 40%; /* 모달 내용 너비 */
+
+
+}
+.modal-content1 img {
+    width: 90%;
+    height: 360px;
+    margin: 20px;
+
+}
+.modal-content2 {
+    padding: 20px 5px;
+    width: 25%; /* 모달 내용 너비 */
+
+}
+.modal-content2  p {
+    text-align: left;
+    color: var(--color__white);
+    font-family: var(--main__ko);
+    font-weight: 500;
+
+}
+
+.modal-content3 {
+    padding: 20px;
+    width: 35%; /* 모달 내용 너비 */
+    height: 400px;
+
+}
+.modal-content3 p {
+    text-align: left;
+    color: var(--color__white);
+    font-family: var(--main__ko);
+    font-weight: 500;
+
+}
+.today {
+    background-color: lightblue;
+  }
+.cont2__inner {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 90%;
+    background-color: var(--color__white);
+    font-family: var(--main__ko);
+    padding: 30px 10px;
+
+}
+.cont2__inner h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.cont3__inner {
+    margin-top: 10px;
+    width: 100%;
+    height: 90%;
+    background-color: var(--color__white);
+
+}
+.month {
+    display: flex;
+    justify-content: space-between;
+}
+.month__prev  {
+    width: 40px;
+    height: 40px;
+    background-image: url(/html/assets/img/CALENDAR/cal_prev_icon.svg);
+    background-repeat: no-repeat;
+
+}
+.month__next {
+    background-image: url(/html/assets/img/CALENDAR/cal_next_icon.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+
+} 
+.month>div span {
+    font-size: 10px;
+}
+.month>div>div {
+    font-size: 60px;
+}
+
+
+
+
+/* 모달 닫기 버튼 스타일 */
+.close {
+    color: #aaaaaa; /* 버튼 색상 */
+    float: right;
+    margin-top: -15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.blind {
+    text-decoration: none;
+}

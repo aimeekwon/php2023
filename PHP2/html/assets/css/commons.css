@@ -1,0 +1,214 @@
+/* skip */
+#skip {
+    position: relative;
+    z-index: 1000000;
+}
+#skip a {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    left: -400px;
+    top: 0;
+    padding: 20px 40px;
+}
+#skip a:active,
+#skip a:focus {
+    left: 0;
+}
+
+/* Color Style */
+.gray {
+    background-color: var(--bg__gray);
+}
+.white {
+    background-color: var(--color__white)!important;
+    color: var(--color__black)!important;
+}
+.black {
+    background-color: var(--color__black)!important;
+    color: var(--color__white)!important;
+}
+/* font */
+body.macintosh {
+    font-family: var(--main__font) !important;
+}
+body.windows {
+    font-family: var(--main__win) !important;
+}
+
+/* container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 보더 설정 */
+.bmStyle {
+    border-bottom: 1px solid var(--color__green);
+    position: relative;
+    width: 100%;
+}
+
+.btStyle {
+    border-top: 1px solid var(--color__green);
+
+}
+/* btnStyle */
+.btnStyle {
+    display: block;
+    background-color: var(--color__green);
+    color: var(--color__white);
+    margin: 5em auto;
+    font-size: 1.2em;
+    padding: 0.5em 3em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btnStyle2 {
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: var(--color__green);
+    color: var(--color__white);
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+/*  */
+.btnStyle3  {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: var(--color__green);
+    color: var(--color__white);
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 간격설정 */
+.mt10 {margin-top: 10px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt50 {margin-top: 50px !important;}
+.mt60 {margin-top: 60px !important;}
+.mt70 {margin-top: 70px !important;}
+.mt120 {margin-top: 120px !important;}
+
+.mb10 {margin-bottom: 10px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb40 {margin-bottom: 40px !important;}
+.mb50 {margin-bottom: 50px !important;}
+.mb60 {margin-bottom: 60px !important;}
+.mb70 {margin-bottom: 70px !important;}
+.mb80 {margin-bottom: 80px !important;}
+.mb90 {margin-bottom: 90px !important;}
+.mb100 {margin-bottom: 100px !important;}
+.mb120 {margin-bottom: 120px !important;}
+
+
+/* input style */
+.inputStyle {
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.8em 2em;
+    border: 0;
+    font-weight: 300;
+    cursor: pointer;
+}
+/* label */
+label.required {
+    display: block;
+    margin-bottom: 0.6em;
+    font-size: 1.3em;
+    
+}
+label.required::after {
+    content: ' *';
+    color: red;  
+}
+/* list Style */
+.listStyle {
+
+}
+.listStyle li {
+    position: relative;
+    padding-left: 16px;
+}
+.listStyle li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: var(--color__black);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* list Style */
+.listStyle2 {
+
+}
+.listStyle2 li {
+    position: relative;
+    padding-left: 16px;
+}
+.listStyle2 li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--color__black); 
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* bg Style */
+.bgStyle1{
+    background-color: var(--bg__gray2);
+    position: relative;
+}
+.bgStyle1::after {
+    content: "PLANTY";
+    position: absolute;
+    font-family: var(--main__en);
+    font-size: 300px;
+    font-weight: 900;
+    width:500px;
+    color: var(--color__white);
+    left: 50%;
+    transform: translateX(-120%);
+    text-align: center;
+    top: 30%;
+    z-index: -1000;
+    filter: blur(6px);
+}
+.bgStyle2{
+    background-image: url(../img/bgimg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bgStyle3 {
+    background-color: var(--bg__gray2);
+}
+/* media */
+
+@media (max-width: 1300px) {
+    .container {
+        width: 96%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

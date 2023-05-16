@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 블로그 만들기</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+
+</head>
+
+<body class="gray">
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner container">
+            <div class="left">
+                <a href="#" class="star">
+                    <span class="blind">메인으로</span>
+                </a>
+            </div>
+            <h1 class="logo"><a href="main.html">Developer Blog</a></h1>
+            <div class="right">
+                <ul>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__inner">
+            <ul>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">게시판</a></li>
+                <li><a href="#">블로그</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <main id="main" class="container">
+        <div class="blog__title">
+            <span class="cate">카테고리 제목</span>
+            <h2 class="title">블로그 게시글 타이틀</h2>
+            <div class="info">
+                <span class="author">글쓴이</span>
+                <span class="date">2023-05-16</span>
+                <div class="modify">
+                    <a href="#">수정</a>
+                    <a href="#">삭제</a>
+                </div>
+            </div>
+        </div>
+        <!-- // blog__title -->
+        <div class="blog__inner">
+           <div class="left mt70">
+               <div class="blog__contents">
+                    <h3>블로그 제목이 들어가고</h3>
+                    <p>블로그 내용들이 여기에 들어가겠지</p>
+                    <p>블로그 내용들이 여기에 들어가겠지</p>
+                    <p>블로그 내용들이 여기에 들어가겠지</p>
+                    <p>블로그 내용들이 여기에 들어가겠지</p>
+                    <p>블로그 내용들이 여기에 들어가겠지</p>
+               </div>
+           </div>
+           <div class="right mt70">
+                <div class="blog__aside">
+                    <div class="intro">
+                        <div class="img">
+                            <picture class="intro__images">
+                                <source srcset="assets/img/intro2.png, assets/img/intro2@2x.png 2x, assets/img/intro2@3x.png 3x" />
+                                <img src="assets/img/intro2.png" alt="소개이미지">
+                            </picture>
+                            <p class="text">
+                                어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cate">
+                        <h4>카테고리</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>최신 글</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>인기 글</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>최신 댓글</h4>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <!-- // blog__inner -->
+        <div class="blog__article">
+            <h3>관련글</h3>
+            <div class="cards__inner col4 line0">
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog01.jpg, assets/img/blog01@2x.jpg 2x, assets/img/blog01@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog1.jpg" alt=""></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩의 기초</h3>
+                        <p>코딩은 컴퓨터에게 지시를 내리기 위해 컴퓨터가 이해할 수 있는 언어인 프로그래밍 언어를 사용하는 과정입니다. 코딩은 웹 사이트, 애플리케이션 및 소프트웨어를 만드는 데 사용됩니다. 코딩은 창의적이고 도전적이며 보람 있는 활동이 될 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog02.jpg, assets/img/blog02@2x.jpg 2x, assets/img/blog02@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog2.jpg" alt=""></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩 팁 및 트릭</h3>
+                        <p>주석을 적극 활용하여 코드의 의도와 로직을 명확히 설명하세요. 이를 통해 다른 개발자들이 코드를 이해하고 협업하는 데 도움이 됩니다.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog03.jpg, assets/img/blog03@2x.jpg 2x, assets/img/blog03@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog3.jpg" alt=""></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩 최신 트렌드</h3>
+                        <p>코딩의 최신 트렌드는 인공 지능, 기계 학습 및 블록체인과 같은 분야의 새로운 기술과 사용입니다. 이 기술은 코딩을 사용하여 새로운 방식으로 문제를 해결하고 새로운 애플리케이션을 만들 수 있는 새로운 가능성을 열어줍니다.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog04.jpg, assets/img/blog04@2x.jpg 2x, assets/img/blog04@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog4.jpg" alt=""></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>자바스크립트</h3>
+                        <p>자바스크립트는 웹 페이지를 동적으로 만드는 데 사용되는 스크립트 언어입니다. 브라우저에서 실행되며 HTML 및 CSS와 함께 사용됩니다. 자바스크립트는 배우고 사용하기 쉬운 언어이며 웹 개발에 매우 강력한 도구입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <!-- // blog__article -->
+        <div class="blog__comment">
+            <h3>댓글쓰기</h3>
+            <div>
+            </div>
+        </div>
+        <!-- // blog__comment -->
+    </main>
+    <!-- //main -->
+    <!-- //main -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <div class="footer__inner btStyle container mb100">
+            <div>Copyright @ 2023 aimee</div>
+            <div>blog by aimee</div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+
+</html>

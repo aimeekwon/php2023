@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달력</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/MAIN/footer.css">
+    <link rel="stylesheet" href="../assets/css/BOARD/board.css">
+    <link rel="stylesheet" href="../assets/css/NAV/calendar.css">
+
+
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+</head>
+<body class="bgStyle3">
+    
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <h2 class="blind">헤더 영역</h2>
+        <div class="container">
+            <div class="header__inner bmStyle">
+                <div class="left">
+                    <h1 class="logo"> <a href="/php2/html/main.html">PLANTY</a></h1>
+                </div>
+                <nav class="nav__inner">
+                    <ul>
+                        <li><a href="#">PLANTY</a></li>
+                        <li><a href="#">식물 사전</a></li>
+                        <li><a href="#">캘린더</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+                <div class="right">
+                    <ul>
+                        <li><a href="/php2/html/LOGIN/login.html">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <main id="main" class="container bmStyle">
+        <div class="calendal__header">
+            <h5>CALENDAR</h5>
+            <h2>2023</h2>
+        </div>
+        <!-- //intro__inner -->
+        <div class="calendal__inner">
+            <div class="calendal__table">
+                <div class="month">
+                    <a href="calendar5m.html"><div class="month__prev"></div></a>
+                    
+                    <div>
+                        <div>6</div>
+                        <span>June</span>
+                    </div> 
+                    <a href="calendar7m.html"><div class="month__next"></div></a>
+
+                </div>
+                <table>
+                    <colgroup>
+                        <col style="width: 14%;">
+                        <col style="width: 14%;">
+                        <col style="width: 14%;">
+                        <col style="width: 14%;">
+                        <col style="width: 14%;">
+                        <col style="width: 14%;">
+                        <col style="width: 14%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="modal-btn">1</td>
+                            <td class="modal-btn">2</td>
+                            <td class="modal-btn">3</td>
+                        </tr>
+                        <tr>
+                            <td class="modal-btn">4</td>
+                            <td class="modal-btn">5</td>
+                            <td class="modal-btn">6</td>
+                            <td class="modal-btn">7</td>
+                            <td class="modal-btn">8</td>
+                            <td class="modal-btn">9</td>
+                            <td class="modal-btn">10</td>
+                        </tr>
+                        <tr>
+                            <td class="modal-btn">11</td>
+                            <td class="modal-btn">12</td>
+                            <td class="modal-btn">13</td>
+                            <td class="modal-btn">14</td>
+                            <td class="modal-btn">15</td>
+                            <td class="modal-btn">16</td>
+                            <td class="modal-btn">17</td>
+                        </tr>
+                        <tr>
+                            <td class="modal-btn">18</td>
+                            <td class="modal-btn">19</td>
+                            <td class="modal-btn">20</td>
+                            <td class="modal-btn">21</td>
+                            <td class="modal-btn">22</td>
+                            <td class="modal-btn">23</td>
+                            <td class="modal-btn">24</td>
+                        </tr>
+                        <tr>
+                            <td class="modal-btn">25</td>
+                            <td class="modal-btn">26</td>
+                            <td class="modal-btn">27</td>
+                            <td class="modal-btn">28</td>
+                            <td class="modal-btn">29</td>
+                            <td class="modal-btn">30</td>
+                            <td class=""></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div id="modal" class="modal">
+                    <div class="modal__inner">
+                        <div class="modal-content1">
+                            <img src="/htdocs/php2/html/assets/img/MAIN/card_img01.png" alt="">
+                        </div>
+                        <div class="modal-content2">
+                            <p>내 식물정보</p>
+                            <div class="cont2__inner">
+                                <h1>투투키</h1>
+                                <h3>처음 데려온 날</h3>
+                                <p>2021년 2월 22일</p>
+
+                                <h3>마지막 분갈이 날</h3>
+                                <p>2021년 5월 1일</p>
+
+                                <h3>마지막 물준 날</h3>
+                                <p>2021년 5월 1일</p>
+
+                            </div>
+                        </div>
+                        <div class="modal-content3">
+                            <span class="close">&times;</span>
+                            <p>관리 Tip</p>
+                            <div class="cont3__inner"></div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <h2 class="blind">푸터 영역</h2>
+                <div class="footer__inner">
+            <div class="f_logo">
+                <span><a href="#">PLANTY</a></span>
+            </div>
+            <nav><ul>
+                <li><a href="#">PLANTY
+                    <ul>
+                        <li><a href="#">브랜드철학</a></li>
+                        <li><a href="#">핵심가치</a></li>
+                    </ul>
+
+                </a></li>
+                <li><a href="#">식물사전
+                    <ul>
+                        <li><a href="#">식물관리정보</a></li>
+                        <li><a href="#">식물소개</a></li>
+                        <li><a href="#">식물검색</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">캘린더
+                    <ul>
+                        <li><a href="#">이달의 식물</a></li>
+                        <li><a href="#">내식물</a></li>
+                    </ul>
+
+                </a></li>
+                <li><a href="#">커뮤니티
+                    <ul>
+                        <li><a href="#">플랜테리어</a></li>
+                        <li><a href="#">내 식물 공유</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">고객센터
+                    <ul>
+                        <li><a href="#">문의사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">F&Q</a></li>
+                    </ul>
+                </a></li>
+
+            </ul></nav>
+
+        </div>
+        <div class="copyright">
+            2023 PLANTY<br>Copyright ⓒAll Rights Reserved.
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <h2 class="blind">푸터 영역</h2>
+                <div class="footer__inner">
+            <div class="f_logo">
+                <span><a href="#">PLANTY</a></span>
+            </div>
+            <nav><ul>
+                <li><a href="#">PLANTY
+                    <ul>
+                        <li><a href="#">브랜드철학</a></li>
+                        <li><a href="#">핵심가치</a></li>
+                    </ul>
+
+                </a></li>
+                <li><a href="#">식물사전
+                    <ul>
+                        <li><a href="#">식물관리정보</a></li>
+                        <li><a href="#">식물소개</a></li>
+                        <li><a href="#">식물검색</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">캘린더
+                    <ul>
+                        <li><a href="#">이달의 식물</a></li>
+                        <li><a href="#">내식물</a></li>
+                    </ul>
+
+                </a></li>
+                <li><a href="#">커뮤니티
+                    <ul>
+                        <li><a href="#">플랜테리어</a></li>
+                        <li><a href="#">내 식물 공유</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">고객센터
+                    <ul>
+                        <li><a href="#">문의사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">F&Q</a></li>
+                    </ul>
+                </a></li>
+
+            </ul></nav>
+
+        </div>
+        <div class="copyright">
+            2023 PLANTY<br>Copyright ⓒAll Rights Reserved.
+        </div>
+    </footer>
+    <!-- //footer -->
+    <script src="../assets/js/NAV/calendar.js"></script>
+</body>
+</html>
