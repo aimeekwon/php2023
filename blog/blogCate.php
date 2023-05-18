@@ -26,9 +26,20 @@
     <?php include "../include/header.php" ?>
     <!-- //header -->
     <main id="main" class="container">
+
+    
         <div class="blog__search bmStyle">
-            <h2><?=$categoryInfo['blogCategory']?></h2>
-            <p><?=$categoryInfo['blogCategory']?>와 관련된 글이 <?=$categoryCount?>개 있습니다.</p>
+        <?php
+                if ($categoryCount == 0) {?>
+                    <h2><?= $category ?></h2>
+                    <p>카테고리와 관련된 게시글이 없습니다.</p>
+                    <?php
+                } else {?>
+                    <h2><?= $categoryInfo['blogCategory'] ?></h2>
+                    <p><?= $categoryInfo['blogCategory'] ?>와 관련된 글이 <?= $categoryCount ?>개 있습니다.</p>
+                    <?php
+                }
+            ?>
         </div>
         <div class="blog__inner">
             <div class="left mt70">

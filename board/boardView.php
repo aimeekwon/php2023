@@ -27,9 +27,9 @@ include "../connect/sessionCheck.php";
     <?php include "../include/header.php" ?>
     <!-- //header -->
     <main id="main" class="container">
-    <div class="blog__title" style="background-image:url(../assets/img/blog_title.png);">
+        
 
-            <!-- <div class="intro__inner center">
+            <div class="intro__inner center">
                 <picture class="intro__images small">
                     <source srcset="../assets/img/join01.png, assets/img/join01@2x.png 2x, assets/img/join01@3x.png 3x" />
                     <img src="../assets/img/join01.png" alt="회원가입 이미지">
@@ -38,8 +38,8 @@ include "../connect/sessionCheck.php";
                 <p class="intro__text">
                     웹디자이너, 웹퍼블리셔
                 </p>
-            </div> -->
-
+            </div>
+            
         </div>
         <!-- //intro__inner -->
 
