@@ -69,8 +69,8 @@
                                 <p class="msg" id="youBirthComment"><!-- 생년월일이 일치하지 않습니다. --></p>
                             </div>
                             <div>
-                            <label for="youPhone">연락처</label>
-                        <input class="inputStyle" type="text" id="youPhone" name="youPhone" placeholder="연락처를 입력해주세요" maxlength="15">
+                                <label for="youPhone">연락처</label>
+                                <input class="inputStyle" type="text" id="youPhone" name="youPhone" placeholder="연락처를 입력해주세요" maxlength="15">
                                 <p class="msg" id="youBirthComment"><!-- 휴대폰 번호를 입력해주세요 --></p>
                             </div>
                             <button type="submit" class="btnStyle">회원가입 완료</button>
@@ -85,6 +85,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
         let isEmailCheck = false;
+        let isNickCheck = false;
+
         function emailChecking(){
             let youEmail = $("#youEmail").val();
             if(youEmail == null || youEmail == ''){

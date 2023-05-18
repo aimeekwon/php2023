@@ -40,7 +40,7 @@
                     </div>
                     <div class="login__footer">
                         <ul class="listStyle2">
-                            <li>회원가입을 하지 않았다면 회원가입을 해주세요 <a href="join.html">회원가입</a></li>
+                        <li>회원가입을 하지 않았다면 회원가입을 해주세요 <a href="join.php">회원가입</a></li>
                             <li>아이디가 기억나지 않는다면 <a href="">아이디찾기</a></li>
                             <li>비밀번호가 기억나지 않는다면 <a href="">비밀번호찾기</a></li>
                         </ul>
